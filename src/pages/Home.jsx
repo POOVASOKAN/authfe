@@ -40,7 +40,7 @@ const Home = () => {
         }}
       >
         <Typography variant='h4' component='h1' gutterBottom>
-          Welcome to Our Website
+          Welcome to user Password Manangement <System></System>
         </Typography>
         {userData ? (
           <>
@@ -48,7 +48,7 @@ const Home = () => {
               Welcome, {userData?.firstName}!
             </Typography>
             <Typography variant='body1' gutterBottom>
-              We're glad to see you again. Feel free to explore our services.
+             Explore and enjoy !!
             </Typography>
             <Button variant='contained' color='primary' onClick={handleLogout}>
               Logout
@@ -57,7 +57,7 @@ const Home = () => {
         ) : (
           <>
             <Typography variant='body1' gutterBottom>
-              To access our services, please sign in.
+               please sign in.
             </Typography>
             <Button variant='contained' color='primary' onClick={handleSignIn}>
               Sign In
