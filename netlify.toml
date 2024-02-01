@@ -1,4 +1,5 @@
 [[redirects]]
-from="/*"
-to="index.html"
-status = 200
+  from = "/magical-froyo-1c1db8.netlify.app/*"
+  to = "https://65ba37e9cb39f5ccb7497abb--magical-froyo-1c1db8.netlify.app/:splat"
+  status = 301
+  force = true
