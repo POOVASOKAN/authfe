@@ -16,17 +16,17 @@ import { ThemeProvider, createTheme } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import CircularProgress from "@mui/material/CircularProgress";
 
-const darkTheme = createTheme({
+const lightTheme = createTheme({
   palette: {
-    mode: "dark",
+    mode: "light",
     primary: {
-      main: "#90caf9",
+      main: "#1976D2",
     },
     secondary: {
-      main: "#f48fb1",
+      main: "#9C27B0",
     },
     error: {
-      main: "#f44336",
+      main: "#E91E63",
     },
   },
 });
@@ -77,7 +77,7 @@ const Signup = () => {
   };
 
   return (
-    <ThemeProvider theme={darkTheme}>
+    <ThemeProvider theme={lightTheme}>
       <CssBaseline />
       <Formik
         initialValues={initialValues}
@@ -99,7 +99,7 @@ const Signup = () => {
                 marginBottom: "20px",
               },
               "& .required": {
-                color: darkTheme.palette.error.main,
+                color: lightTheme.palette.error.main,
               },
             }}
             noValidate

@@ -9,17 +9,17 @@ import CircularProgress from "@mui/material/CircularProgress";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 
-const darkTheme = createTheme({
+const lightTheme = createTheme({
   palette: {
-    mode: "dark",
+    mode: "light",
     primary: {
-      main: "#90caf9",
+      main: "#1976D2",
     },
     secondary: {
-      main: "#f48fb1",
+      main: "#9C27B0",
     },
     error: {
-      main: "#f44336",
+      main: "#E91E63",
     },
   },
 });
@@ -67,7 +67,7 @@ const ForgotPasswordPage = () => {
   };
 
   return (
-    <ThemeProvider theme={darkTheme}>
+    <ThemeProvider theme={lightTheme}>
       <CssBaseline />
       <Box
         component='form'
